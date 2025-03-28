@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<div id='phone'>
+    <button onclick='closePhone()'>Fermer</button>
+    <div id='contacts'></div>
+    <input type='text' id='contactName' placeholder='Nom'>
+    <input type='text' id='contactNumber' placeholder='Numéro'>
+    <button onclick='addContact()'>Ajouter Contact</button>
+    <input type='text' id='smsTarget' placeholder='Numéro'>
+    <input type='text' id='smsMessage' placeholder='Message'>
+    <button onclick='sendSMS()'>Envoyer SMS</button>
+    <input type='text' id='callTarget' placeholder='Numéro'>
+    <button onclick='makeCall()'>Appeler</button>
+    <div id='callNotification' style='display:none;'>Appel entrant de <span id='caller'></span></div>
+</div>
+<script src='script.js'></script>
+</body>
+</html>
